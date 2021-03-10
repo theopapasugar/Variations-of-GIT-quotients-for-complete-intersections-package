@@ -16,82 +16,206 @@ from scipy.spatial import ConvexHull
 
 #TODO add docstrings in sage format
 
-def denom(float_value):
-    """
-
-    @param float_value: float parameter
-    @return: the denominator of float written as a fraction.
-    """
-    frac = Fraction(float_value).limit_denominator(1000000000000000)
-    den = frac.denominator
-    return den
-
-
 def mult_by_lcm(list1):
-    """
+    r"""
+    Return the list multiplied by least common multiple of denominators of its list elements.
 
-    @param list1: list of floats
-    @return: list multiplied by least common multiple of denominators of list elements.
+    INPUT:
+
+    - ``list1`` -- list; this should be a list of fractions or ints
+
+    OUTPUT: the list multiplied by the lcm
+
+    EXAMPLES:
+
+    This example illustrates the basic function of mult_by_lcm ::
+
+        sage: testl = [1/3, 3/5, 2/3, 4/3]
+        sage: mult_by_lcm(testl)
+        [5, 9, 10, 20]
+
+    We now test for a case where all denominators are different ::
+
+        sage: testl = [1/2, 1/3, 1/4, 1/5]
+        sage: mult_by_lcm(testl)
+        [30, 20, 15, 12]
+
+    It is an error to use a list with floats in it ::
+
+        sage: testl = [1.3, 3.5, 2.7]
+        Traceback (most recent call last):
+        ...
+        AttributeError: 'sage.rings.real_mpfr.RealLiteral' object has no attribute 'denominator'
+
+
+    TESTS::
+
+        sage: testl = [1, 2, 3, 4, 5]  # Check for case where all elements are ints
+        sage: mult_by_lcm(testl)
+        [1, 2, 3, 4, 5]
     """
-    denominator_list = [numb.q for numb in list1 if numb.p != 0]
+    
+    denominator_list = [list1[i].denominator() for i in range(len(list1))]
     lcm = denominator_list[0]
     for d in denominator_list[1:]:
-        lcm = lcm * d // math.gcd(lcm, d)
-    new_elem = [lcm * frac for frac in list1]
+        lcm = lcm / gcd(lcm, d) * d
+    new_elem = [x * lcm for x in list1]
     return new_elem
 
 
 def element_wise_multiplication(list1, list2):
-    """
+    r"""
+    Return the list with elements the multiples of list1 by elements of list2.
 
-    @param list1: a list
-    @param list2: a list
-    @return: list with elements the multiples of list1 by elements of list2
+    INPUT:
+
+    - ``list1`` -- list; contains floats or ints
+
+    - ``list2`` -- list; contains floats or ints
+
+    OUTPUT: the product of the lists as a list
+
+    EXAMPLES:
+
+    This example illustrates a basic list multiplication ::
+
+        sage: test1 = [1, 2, 3, 4]; test2 = [5, 6, 7, 8]
+        sage: element_wise_multiplication(test1, test2)
+        [5, 12, 21, 32]
+
     """
     return [list1[i] * list2[i] for i in range(len(list1))]
 
 
 def dot_product(list1, list2):
-    """
+    r"""
+    Return the dot product of list1 and list2`.
 
-    @param list1: a list
-    @param list2: a list
-    @return: the inner product of the two lists
+    INPUT:
+
+    - ``list1`` -- list; contains floats or ints
+
+    - ``list2`` -- list; contains floats or ints
+
+    OUTPUT: the dot product as a fraction or int
+
+    EXAMPLES:
+
+    This example illustrates a basic dot product ::
+
+        sage: test1 = [1, 2, 3, 4]; test2 = [5, 6, 7, 8]
+        sage: dot_product(test1, test2)
+        70
+
+    We now compute a dot product that is a fraction ::
+
+        sage: test1 = [1, 2, 3, 4]; test2 = [1.3, 3.5, 2.7]
+        sage: dot_product(test1, test2)
+        163/60
+
     """
     return sum(element_wise_multiplication(list1, list2))
 
 
 def ordertest(seq):
-    """
+    r"""
+    Return True or False if seq is ordered in a descending order`.
 
-    @param seq: a list which is a sequence of numbers
-    @return: True or False depending on whether the list is ordered
+    INPUT:
+
+    - ``seq`` -- list; contains floats or ints
+
+    OUTPUT: True or False
+
+    EXAMPLES:
+
+    This example illustrates a non ordered list ::
+
+        sage: test1 = [1, 2, 3, 4]
+        sage: ordertest(test1)
+        False
+
+    This example illustrates an ordered list ::
+
+        sage: test1 = [10, 9, 8, 7, 6, 5, 2]
+        sage: ordertest(test1)
+        True
+
     """
+    
     return all(earlier >= later for earlier, later in zip(seq, seq[1:]))
 
 
-def gamma_bigger_e(array1, array2, gamma):
-    """
+def gamma_bigger_e(list1, list2, gamma):
+    r"""
+    Return True or False if list2 is bigger in the monomial order than list1`.
 
-    @param array1: a list corresponding to a monomial
-    @param array2: a list corresponding to a monomial
-    @param gamma: a list corresponding to a one-parameter subgroup
-    @return: True if array2 is greater or equal than array1 with respect to the gamma-order, False otherwise
+    INPUT:
+
+    - ``list1`` -- list; contains ints, corresponding to a monomial
+
+    - ``list2`` -- list; contains ints, corresponding to a monomial
+    
+    - ``gamma`` -- list; contains ints, corresponding to a one-parameter subgroup.
+
+
+    OUTPUT: True or False
+
+    EXAMPLES:
+
+    This example illustrates a monomial which is bigger or equal with respect to the order for specific one-parameter subgroup [1, 1, -1, -1] ::
+
+        sage: ops = [1, 1, -1, -1]; mon1 = [2, 0, 0, 0]; mon2 = [0, 2, 0, 0]
+        sage: gamma_bigger_e(mon2, mon1, ops)
+        True
+
+    This example illustrates a monomial which is not bigger or equal with respect to the order for specific one-parameter subgroup [1, 1, -1, -1] ::
+
+        sage: ops = [1, 1, -1, -1]; mon1 = [2, 0, 0, 0]; mon2 = [0, 1, 0, 1]
+        sage: gamma_bigger_e(mon1, mon2, ops)
+        False
+
+    Any monomial is bigger or equal than itself ::
+
+        sage: ops = [1, 1, -1, -1]; mon1 = [2, 0, 0, 0]
+        sage: gamma_bigger_e(mon1, mon1, ops)
+        True
+
     """
-    prod1 = dot_product(array1, gamma)
-    prod2 = dot_product(array2, gamma)
+    
+    prod1 = dot_product(list1, gamma)
+    prod2 = dot_product(list2, gamma)
     if prod1 != prod2:
         return prod1 < prod2
     else:
-        return array1 <= array2
+        return list1 <= list2
 
 
 def equal_listoflists(listof1, listof2):
-    """
+    r"""
+    Return True or False if listof1 has the same elements as listof1`.
 
-    @param listof1: a list of lists corresponding to a list of monomials
-    @param listof2: a list of lists corresponding to a list of monomials
-    @return: True if listof1 == listof2, False otherwise
+    INPUT:
+
+    - ``listof1`` -- list of lists; contains lists of ints, representing monomials
+
+    - ``listof2`` -- list of lists; contains lists of ints, representing monomials
+
+    OUTPUT: True or False
+
+    EXAMPLES:
+
+    This example illustrates two equal lists of lists ::
+
+        sage: test1 = [[1, 1, 0, 0], [1, 0 , 0 , 1], [2, 0, 0, 0]]; test2 = [[2, 0, 0, 0], [1, 1, 0, 0], [1, 0 , 0 , 1]]
+        sage: equal_listoflists(test1, test2)
+        True
+
+    This example illustrates two non equal lists of lists ::
+
+        sage: test1 = [[1, 1, 0, 0], [1, 0 , 0 , 1], [2, 0, 0, 0]]; test2 = [[1, 0, 1, 0], [0, 0, 0, 2]]
+        sage: equal_listoflists(test1, test2)
+        False
     """
     first_set = set(map(tuple, listof1))
     secnd_set = set(map(tuple, listof2))
@@ -136,21 +260,61 @@ def maxsets_comparison(listoflistoflistvm_walls, listoflistoflistvm_chambers, li
     # The following define some methods on lists in order to display the $N^-$ as functions
 
 
-def to_the_power(array1, array2):
-    """
+def to_the_power(list1, list2):
+    r"""
+    Return the powers of elements of list1 with respect to the elements of list2`.
 
-    @param array1: an array
-    @param array2: an array
-    @return: a list with elements the elements of array1 raised to the power of an element of array2
+    INPUT:
+
+    - ``list1`` -- list; contains floats or ints
+
+    - ``list2`` -- list; contains floats or ints
+
+    OUTPUT: the list of raised powers
+
+    EXAMPLES:
+
+    This example illustrates a basic operations ::
+
+        sage: test1 = [1, 2, 3, 4]; test2 = [5, 6, 7, 8]
+        sage: to_the_power(test1, test2)
+        [1, 64, 2187, 65536]
+
+    This also works with symbols ::
+
+        sage: test1 = [1, 2, 3, 4]; x = var('x', n=4)
+        sage: dot_product(x, test1)
+        [x0, x1^2, x2^3, x3^4]
+
     """
-    return [a ** b for a, b in zip(array1, array2)]
+    return [a ** b for a, b in zip(list1, list2)]
 
 
 def mult_list(list1):
-    """
+    r"""
+    Return the multiple of all elements of list1`.
 
-    @param list1: a list
-    @return: the multiplication of all the elements of list1
+    INPUT:
+
+    - ``list1`` -- list; contains floats or ints
+
+
+    OUTPUT: float or int 
+
+    EXAMPLES:
+
+    This example illustrates a basic operations ::
+
+        sage: test1 = [1, 2, 3, 4]
+        sage: mult_list(test1)
+        24
+
+    This also works with symbols ::
+
+        sage: x = var('x', n=4)
+        sage: mult_list(x)
+        x0*x1*x2*x3
+
     """
     total = 1
     for i in range(len(list1)):
@@ -159,21 +323,58 @@ def mult_list(list1):
 
 
 def sum_of_tuples(tuple1, tuple2):
-    """
+    r"""
+    Return the sum of tuple1 and tuple1`.
 
-    @param tuple1: a tuple
-    @param tuple2: a tuple
-    @return: a list tuple1+tuple2
+    INPUT:
+
+    - ``list1`` -- tuple or list; contains floats or ints
+
+    - ``list1`` -- tuple or list; contains floats or ints
+
+
+
+    OUTPUT: list of the sum 
+
+    EXAMPLES:
+
+    This example illustrates a basic sum of tuples ::
+
+        sage: test1 = (1,2,3,4); test2 = (5,6,7,8)
+        sage: sum_of_tuples(test1, test2)
+        [6, 8, 10, 12]
+
     """
     return [a+b for a, b in zip(tuple1, tuple2)]
 
 
 def max_monomial(monomial_list, gamma):
-    """
+    r"""
+    Return the max monomial of the monomial list with respect to the one-parameter subgroup gamma`.
 
-    @param monomial_list: a list of lists corresponding to a list of monomials
-    @param gamma: a list corresponding to a one-parameter subgroup
-    @return: the maximal monomial of monomial_list with respect to the gamma-order
+    INPUT:
+
+    - ``list1`` -- list of lists; contains lists of ints, corresponding to a list of monomials
+
+    - ``gamma`` -- list; corresponding to a one-parameter subgroup
+
+
+    OUTPUT: list which is the max monomial
+
+    EXAMPLES:
+
+    This example illustrates the max monomial of the monomial list test1 ::
+
+        sage: test1 = [[1, 1, 0, 0], [1, 0 , 0 , 1], [2, 0, 0, 0]]; ops  =  [1, 1, -1, -1]
+        sage: max_monomial(test1, ops)
+        [2, 0, 0, 0]
+
+    This example illustrates the max monomial of the monomial list test1 ::
+
+        sage: test1 = [[1, 1, 0, 0], [1, 0 , 0 , 1]]; ops  =  [1, 1, -1, -1]
+        sage: max_monomial(test1, ops)
+        [1, 1, 0, 0]
+
     """
     counter_list = []
     for monomial1 in monomial_list:
@@ -365,10 +566,40 @@ def t_chambers(t_wall_list):
     return chambers
 
 def monomials(dimension, degree):
-    """
+    r"""
+    Return the homogeneous monomials of degree d in dimension n`.
 
-    :param dimension: int, the dimension of the embeded projective space
-    :param degree: int, the degree of the hypersurfaces
-    :return: a list of lists containing the homogeneous monomials of degree d in dimension n.
+    INPUT:
+
+    - ``dimension`` -- int; the dimension of the embeded projective space
+
+    - ``degree`` -- int; the degree of the hypersurfaces
+
+
+    OUTPUT: a list of lists containing the homogeneous monomials of degree d in dimension n.
+
+    EXAMPLES:
+
+    This example illustrates the construction of monomials of dimension 2 and degree 3 ::
+
+        sage: monomials(2,3)
+        [[0, 0, 3],
+        [0, 1, 2],
+        [1, 0, 2],
+        [0, 2, 1],
+        [1, 1, 1],
+        [2, 0, 1],
+        [0, 3, 0],
+        [1, 2, 0],
+        [2, 1, 0],
+        [3, 0, 0]]
+
+    It is wrong to not input integer values dimension and degree ::
+
+        sage: monomials(3,2.5)
+        Traceback (most recent call last):
+        ...
+        TypeError: unsupported operand parent(s) for //: 'Real Field with 53 bits of precision' and 'Real Field with 53 bits of precision'
+
     """
     return list(WeightedIntegerVectors(degree, [1 for i in range(dimension + 1)]))
