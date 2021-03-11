@@ -17,8 +17,8 @@ no_of_hypersurfaces = 3
 #monomial_hyperplane = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
 
 #User to call the following depending on the dimension/degree of their choosing
-#monomial_hypersurface = monomials(dimension, degree)
-#monomial_hyperplane = monomials(dimension, 1)
+monomial_hypersurface = monomials(dimension, degree)
+monomial_hyperplane = monomials(dimension, 1)
 
 opset = Problem.ops_set(monomial_hypersurface,dimension, no_of_hypersurfaces)
 Problem.printout(opset, dimension, degree, no_of_hypersurfaces)
