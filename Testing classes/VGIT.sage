@@ -141,6 +141,7 @@ class Problem:
             full_solution = [tuple(elem) for elem in sols_set]
             final_set = list(set(full_solution))  #removes duplicates
             final_set1 = [list(elem) for elem in final_set]
+            final_set1.append([1,-1])
             print(len(final_set1))
             with open("ops_set.txt", "wb") as fp:
                 #Pickling
