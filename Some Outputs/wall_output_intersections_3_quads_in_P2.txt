@@ -1,0 +1,193 @@
+Solving problem in P^ 2  degree  2  and  3  hypersurfaces for wall t= 0
+Family 0
+Vm:
+d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e1*x1*x2 + e0*x2^2
+1
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(0, 1, 1)
+Support monomial 1
+(0, 1, 1)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x0^2
+The B^0 are: 
+0
+e1*x1*x2 + e0*x2^2
+1
+e4*x1^2 + e1*x1*x2 + e3*x1*x2 + e0*x2^2 + e2*x2^2
+#######################################################
+Family 1
+Vm:
+d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+1
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(1, 0, 1)
+Support monomial 1
+(1, 0, 1)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x0*x1 + d1*x0*x2
+The B^0 are: 
+0
+e0*x0*x2
+1
+e0*x1^2
+#######################################################
+Family 2
+Vm:
+d2*x1^2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+1
+e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(1, 0, 1)
+Support monomial 1
+(1, 1, 0)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d2*x1^2 + d0*x1*x2 + d1*x2^2
+The B^0 are: 
+0
+e0*x0*x2
+1
+e2*x0*x1 + e0*x0*x2 + e1*x0*x2
+#######################################################
+Family 3
+Vm:
+d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+1
+e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(0, 2, 0)
+Support monomial 1
+(1, 1, 0)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x0*x1 + d1*x0*x2
+The B^0 are: 
+0
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+1
+e1*x0*x1 + e0*x0*x2
+#######################################################
+Family 4
+Vm:
+d2*x1^2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+1
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(0, 2, 0)
+Support monomial 1
+(2, 0, 0)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d2*x1^2 + d0*x1*x2 + d1*x2^2
+The B^0 are: 
+0
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+1
+e0*x0^2
+#######################################################
+Family 5
+Vm:
+d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e0*x2^2
+1
+e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(1, 0, 1)
+Support monomial 1
+(1, 0, 1)
+One-parameter subgroup:
+(1, 0, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x0^2
+The B^0 are: 
+0
+e0*x2^2
+1
+e1*x1^2 + e0*x0*x2
+#######################################################
+Family 6
+Vm:
+d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+The Bms are:
+0
+e0*x2^2
+1
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(2, 0, 0)
+Support monomial 1
+(2, 0, 0)
+One-parameter subgroup:
+(1, 0, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x1^2 + d1*x0*x2
+The B^0 are: 
+0
+e0*x2^2
+1
+e0*x0^2
+#######################################################
+Family 7
+Vm:
+d0*x2^2
+The Bms are:
+0
+e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+1
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial 0
+(1, 0, 1)
+Support monomial 1
+(2, 0, 0)
+One-parameter subgroup:
+(1, 0, -1)
+##############################
+This is a strictly semistable family
+Potential closed orbit
+V^0 =  d0*x2^2
+The B^0 are: 
+0
+e1*x1^2 + e0*x0*x2
+1
+e0*x0^2
+#######################################################

@@ -1,0 +1,139 @@
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Found false walls
+The walls are [1/5, 1/2, 5/4, 2]
+The chambers are [7/20, 41/40, 17/10]
+Solving for wall 1/5
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Found false walls
+The walls are [0, 1/2, 5/4, 2]
+The chambers are [7/20, 41/40, 17/10]
+Solving for wall 0
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Found false walls
+The walls are [0, 1/2, 5/4, 2]
+The chambers are [7/20, 41/40, 17/10]
+Solving for wall 0
+Case 1
+V^- =  d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (0, 2, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x1^2 + d1*x1*x2 + d0*x2^2
+B^- =  e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 1, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e0*x2^2
+Support monomial hypersurface:  (0, 0, 2)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 0, 1)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x2^2
+B^- =  e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (2, 0, 0)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Solving for wall 1/2
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Found false walls
+The walls are [0, 1/2, 5/4, 2]
+The chambers are [7/20, 41/40, 17/10]
+Solving for wall 0
+Case 1
+V^- =  d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (0, 2, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x1^2 + d1*x1*x2 + d0*x2^2
+B^- =  e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 1, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e0*x2^2
+Support monomial hypersurface:  (0, 0, 2)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 0, 1)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x2^2
+B^- =  e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (2, 0, 0)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Solving for wall 1/2
+Solving for complete intersection of degree 2 and hyperplane section in dimension 2
+Found false walls
+The walls are [0, 1/2, 5/4, 2]
+The chambers are [7/20, 41/40, 17/10]
+Solving for wall 0
+Case 1
+V^- =  d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (0, 2, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x1^2 + d1*x1*x2 + d0*x2^2
+B^- =  e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 1, 0)
+1-ps:  (2, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e0*x2^2
+Support monomial hypersurface:  (0, 0, 2)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (1, 0, 1)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x2^2
+B^- =  e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial hypersurface:  (2, 0, 0)
+1-ps:  (1, 1, -2)
+Not strictly t-semistable
+#######################################################
+Solving for wall 1/2
+Case 1
+V^- =  d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+B^- =  e2*x1^2 + e1*x1*x2 + e0*x2^2
