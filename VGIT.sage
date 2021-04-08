@@ -17,7 +17,17 @@ my_import("OPS")
 
 
 class Problem:
-    """docstring for Problem"""
+    r"""
+    Class that details the VGIT problem. Takes dimension, degree and number of hypersurfaces.
+
+    EXAMPLES:
+
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2
+        sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+        sage: params
+        (2,2,2)
+
+    """
     def __init__(self, dim, deg, hyp_no):
         self.dim = dim
         self.deg = deg
@@ -25,15 +35,26 @@ class Problem:
 
 
     def t_walls(self, oneps):
-        """
+        r"""
+        Return all the walls corresponding to a specific dimension, degree and number of hypersurfaces and one-parameter subgroup.
 
-        @param monomial_list1: list of lists of monomials, corresponding to the monomials of the hypersurfaces
-        @param monomial_list2: list of lists of monomials, corresponding to the monomials of the hyperplane
-        @param no_of_hypersurfaces: the number of hypersurfaces
-        @param oneps: a list corresponding to a one-parameter subgroup
-        @param dimension: int, the dimension of the embedded projective space
-        @param degree: int, the degree of the hypersurfaces
-        @return: list of floats, sorted with ascending order corresponding to the walls with respect to the oneps
+        INPUT:
+
+        - ``self`` -- Problem; the dimension, degree and number of hypersurfaces for the problem
+        - ``oneps`` -- OPS; an OPS of fractions or ints
+
+        OUTPUT: a list of floats corresponding to the walls
+
+        EXAMPLES:
+
+        The walls given a specific one parameter subgroup (1, 0, -1) in `n = 2` ::
+
+            sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; oneps = OPS([1, 0, -1])
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: walls = params.t_walls(oneps)
+            sage: walls
+            [0, 1, 2]
+
         """
         monomial_list1 = Monomial.monomials(self.dim, self.deg)
         monomial_list2 = Monomial.monomials(self.dim, 1)
@@ -63,18 +84,29 @@ class Problem:
 
 
     def all_walls(self, onepset_list=None):
-        """
+        r"""
+        Return all the walls corresponding to a specific dimension, degree and number of hypersurfaces.
 
-        @param onepset_list: a list of lists corresponding to a list one-parameter subgroup
-        @param monomial_list1: list of lists of monomials, corresponding to the monomials of the hypersurfaces
-        @param monomial_list2: corresponding to the monomials of the hyperplane
-        @param no_of_hypersurfaces: the number of hypersurfaces
-        @param dim: the dimension of the embeded projective space
-        @param deg: the degree of the hypersurfaces
-        @return: list of floats, sorted with ascending order corresponding to all the walls
+        INPUT:
+
+        - ``self`` -- Problem; the dimension, degree and number of hypersurfaces for the problem
+        - ``onepset_list`` -- list of OPS; a list of OPS of fractions or ints
+
+        OUTPUT: a list of floats corresponding to the walls
+
+        EXAMPLES:
+
+        The walls given a specific dimension = 2; degree = 2; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; opset = [OPS((1, 1, -2)), OPS((4, 1, -5)), OPS((5, -1, -4)), OPS((1, 0, -1)), OPS((2, -1, -1))]
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: walls = params.all_walls(opset)
+            sage: walls
+            [0, 1/5, 1/2, 4/5, 1, 5/4, 7/5, 2]
+
         """
-        #if onepslist == None:
-        #    onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
+        if onepset_list == None:
+            onepset_list = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         monomial_list1 = Monomial.monomials(self.dim, self.deg)
         monomial_list2 = Monomial.monomials(self.dim, 1)
         final_walls = []
@@ -90,11 +122,28 @@ class Problem:
 
     @staticmethod
     def t_chambers(t_wall_list):
-        """
+        r"""
+        Return all the chambers corresponding to a specific dimension, degree and number of hypersurfaces.
 
-        @param t_wall_list: a list of floats, corresponding to all the walls
-        @return: a list of floats, corresponding to all the chambers
+        INPUT:
+
+        - ``t_wall_list`` -- list of floats; a list of walls
+
+        OUTPUT: a list of floats corresponding to the chambers
+
+        EXAMPLES:
+
+        The chambers given a specific dimension = 2; degree = 2; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; opset = [OPS((1, 1, -2)), OPS((4, 1, -5)), OPS((5, -1, -4)), OPS((1, 0, -1)), OPS((2, -1, -1))]
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: walls = params.all_walls(opset)
+            sage: chambers = Problem.t_chambers(walls)
+            sage: chambers
+            [1/10, 7/20, 13/20, 9/10, 9/8, 53/40, 17/10]
+
         """
+        
         chambers = []
         for i in range(len(t_wall_list) - 1):
             tden = t_wall_list[i] + t_wall_list[i + 1]
@@ -106,16 +155,49 @@ class Problem:
 
 
     def max_semi_dest_sets(self, onepslist=None):
-        """
+        r"""
+        Return the vgit non stable elements for all walls. If onepslist=None then the program generates the fundamental set of one-parameter subgroups.
 
-        @param onepslist:a list of list of floats, corresponding to a list of one-parameter subgroups. DEFAULT: the list of one-parameter subgroups of given dimension and degree and number of hypersurfaces
-        @param self.dim: int, the dimension of the embedded projective space
-        @param self.deg: an int, the degree of the hypersurfaces
-        @param self.hyp_no: int, the number of hypersurfaces
-        @return: Generates all walls/chambers and finds the destabilizing families, which then writes into distinct txt files, while discarding false walls/chambers
+        INPUT:
+
+        - ``self`` -- Problem; the dimension, degree and number of hypersurfaces for the problem
+        - ``onepset_list`` -- list of OPS; a list of OPS of fractions or ints
+
+        OUTPUT: a list of 14 elements each correpsonfing to The maximal families of the complete intersection for all walls (maximal_dest_vm_walls, maximal_dest_bm_walls) and chambers, the maximal families of the hyperplane section for all walls (maximal_dest_bhm_walls) and chambers (maximal_dest_bhm_chambers), the support monomials for the complete intersection and the hyperplane section and each destabilizing gammat and wall/chamber.
+
+        EXAMPLES:
+
+        The full VGIT picture given a specific dimension = 2; degree = 2; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: vgit_problem = params.max_semi_dest_sets()
+            sage: vgit_problem
+            [[[[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)]]], [[[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]]], [[[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)]]], [[[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]]], [[[], [], [], [], []], [[(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)]], [[(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)]], [[(0, 0, 1)]]], [[[(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)]], [[(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)]], [[(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)], [(0, 0, 1)]]], [[(0, 0, 2), (2, 0, 0), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(1, 0, 1), (2, 0, 0), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(1, 0, 1), (2, 0, 0), (1, 0, 1), (1, 1, 0)], [(2, 0, 0)]], [[(0, 0, 2), (2, 0, 0), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(1, 0, 1), (2, 0, 0), (0, 2, 0), (0, 2, 0), (1, 1, 0)], [(1, 0, 1), (2, 0, 0), (0, 2, 0), (1, 1, 0)]], [[(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(0, 0, 1)]], [[(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)]], [[(1, 1, -2), (1, 1, -2), (1, 0, -1), (2, -1, -1), (2, -1, -1)], [(1, 1, -2), (1, 1, -2), (5, -1, -4), (5, -1, -4), (5, -1, -4)], [(1, 1, -2), (1, 1, -2), (1, 0, -1), (1, 0, -1)], [(1, 1, -2)]], [[(1, 1, -2), (1, 1, -2), (1, 0, -1), (2, -1, -1), (2, -1, -1)], [(1, 1, -2), (1, 1, -2), (4, 1, -5), (5, -1, -4), (5, -1, -4)], [(1, 1, -2), (1, 1, -2), (4, 1, -5), (4, 1, -5)]], [0, 1/2, 1, 2], [7/20, 9/10, 17/10]]
+        
+        TEST:
+
+        The full VGIT picture given a specific dimension = 1; degree = 4; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 1; degree = 4; no_of_hypersurfaces = 2
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: vgit_problem = params.max_semi_dest_sets()
+            sage: vgit_problem
+            [[[[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3)], [(0, 4)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]]], [[[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3)], [(0, 4)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)]]], [[[(0, 4)], [(0, 4), (1, 3)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]]], [[[(0, 4)], [(0, 4), (1, 3)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]]], [[[], [], [], [], []], [[(0, 1)], [(0, 1)], [(0, 1)], [(0, 1)]], [[(0, 1)], [(0, 1)], [(0, 1)]], [[(0, 1)], [(0, 1)]], [[(0, 1)]]], [[[(0, 1)], [(0, 1)], [(0, 1)], [(0, 1)], [(0, 1)]], [[(0, 1)], [(0, 1)], [(0, 1)], [(0, 1)]], [[(0, 1)], [(0, 1)], [(0, 1)]], [[(0, 1)], [(0, 1)]]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(1, 3), (2, 2), (3, 1), (4, 0)], [(2, 2), (3, 1), (4, 0)], [(3, 1), (4, 0)], [(4, 0)]], [[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(1, 3), (2, 2), (3, 1), (4, 0)], [(2, 2), (3, 1), (4, 0)], [(3, 1), (4, 0)]], [[(0, 1), (0, 1), (0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1)], [(0, 1)]], [[(0, 1), (0, 1), (0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1), (0, 1)], [(0, 1), (0, 1)]], [[(1, -1), (1, -1), (1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1)], [(1, -1)]], [[(1, -1), (1, -1), (1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1), (1, -1)], [(1, -1), (1, -1)]], [0, 2, 4, 6, 8], [1, 3, 5, 7]]
+
+
+        ALGORITHM:
+
+        We construct all the walls and chambers and for each of those we find the maximal destabilizing families using max_sets_t(). We call these maximal_dest_vm_walls, maximal_dest_bm_walls and 
+        maximal_dest_bhm_walls for each wall and maximal_dest_vm_chambers, maximal_dest_bm_chambers and maximal_dest_bhm_chambers. These are lists where each ith element corresponds to the ith wall.
+        We then check if maximal_dest_vm_chambers[i] `\susbeteq` maximal_dest_vm_walls[i+1], maximal_dest_bm_chambers[i] `\susbeteq` maximal_dest_bm_walls[i+1], and 
+        if maximal_dest_bhm_chambers[i] `\susbeteq` maximal_dest_bhm_walls[i+1]. If the condition is satisfied, we remove wall i+1 from the list as it is a false wall and chamber i. We keep all the 
+        values of true walls/ chambers and append them into a list.
+
         """
-        #if onepslist == None:
-        #onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
+        
+        if onepslist == None:
+            onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         flag = [1000]
         r = self.hyp_no-1
         tden = self.deg * self.hyp_no / self.dim
@@ -182,11 +264,11 @@ class Problem:
             support_monomialsh_chambers.append(set_t[4])
             gamma_chambers.append(set_t[5])
         discarded_positions_walls = []
-        discarded_positions_chambers = []
-        if r > 1:
+        discarded_positions_chambers = [] 
+        if r > 1: 
             equality_test1 = []
             equality_test2 = []
-            for i in range(len(maximal_dest_vm_chambers)):
+            for i in range(len(maximal_dest_vm_chambers)): #checks for false walls
                 counter1 = 0
                 for m in range(r):
                     equality_test1.append(maxsets_comparison(maximal_dest_vm_walls[i + 1], maximal_dest_vm_chambers[i], maximal_dest_bm_walls[m][i + 1], maximal_dest_bm_chambers[m][i], maximal_dest_bhm_walls[i + 1], maximal_dest_bhm_chambers[i], self.hyp_no))
@@ -320,21 +402,55 @@ class Problem:
         #     pickle.dump(used_walls, fp)
         # with open("used_chambers.txt", "wb") as fp:   #Pickling
         #     pickle.dump(used_chambers, fp) #todo maybe add return and not rely on pickle
-        return [maximal_dest_vm_walls, maximal_dest_vm_chambers, maximal_dest_bm_walls, maximal_dest_bm_chambers, maximal_dest_bhm_walls, maximal_dest_bhm_chambers, support_monomials_walls, support_monomials_chambers, support_monomialsh_walls, support_monomialsh_chambers, gamma_walls, gamma_chambers, used_walls, used_chambers ]
+        return [maximal_dest_vm_walls, maximal_dest_vm_chambers, maximal_dest_bm_walls, maximal_dest_bm_chambers, maximal_dest_bhm_walls, maximal_dest_bhm_chambers, support_monomials_walls, support_monomials_chambers, support_monomialsh_walls, support_monomialsh_chambers, gamma_walls, gamma_chambers, used_walls, used_chambers]
 
 
     def max_sets_t(self, onepslist=None, t=0):
-        """
+        r"""
+        Return the vgit non stable elements for a specific wall. The default value is t=0 which corresponds to a GIT problem. If onepslist=None then the program generates the fundamental set of one-parameter subgroups.
+
+        INPUT:
+
+        - ``self`` -- Problem; the dimension, degree and number of hypersurfaces for the problem
+        - ``onepset_list`` -- list of OPS; a list of OPS of fractions or ints, Default None
+        - ``t`` -- float; a wall, Default 0
+
+        OUTPUT: a list of 6 elements each correpsonfing to The maximal families of the complete intersection (maximal_dest_vmt, maximal_dest_bmt), the maximal families of the hyperplane section (if t is non-zero) (maximal_dest_bhmt), the support monomials for the complete intersection and the hyperplane section (support_monomialst, support_monomialsht), and each destabilizing gammat
+
+        EXAMPLES:
+
+        The maximal destabilizing families given a specific dimension = 2; degree = 2; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: git_problem = params.max_sets_t()
+            sage: git_problem
+            [[[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]], [[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]], [[], [], [], [], []], [(0, 0, 2), (2, 0, 0), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)], [(1, 1, -2), (1, 1, -2), (1, 0, -1), (2, -1, -1), (2, -1, -1)]]
         
-        @param onepslist: a list of list of floats, corresponding to a list of one-parameter subgroups. DEFAULT: the list of one-parameter subgroups of given dimension and degree and number of hypersurfaces
-        @param t: float, a wall/chamber
-        @param monomial_list1: a list of list of floats, corresponding to a list of monomials in hypersurface. DEFAULT: the monomial list of given dimension and degree
-        @param monomial_list2: a list of list of floats, corresponding to a list of monomials in hyperplane. DEFAULT: the monomial list of hyperplanes given dimension
-        @param self.hyp_no: int, the number of hypersurfaces
-        @return: a list containing all the destabilizing families with respect to the specific t
+        TEST:
+
+        The maximal destabilizing families given a specific dimension = 1; degree = 4; no_of_hypersurfaces = 2 ::
+
+            sage: dimension = 1; degree = 4; no_of_hypersurfaces = 2
+            sage: params = Problem(dimension, degree, no_of_hypersurfaces)
+            sage: git_problem = params.max_sets_t()
+            sage: git_problem
+            [[[(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3)], [(0, 4)]], [[(0, 4)], [(0, 4), (1, 3)], [(0, 4), (1, 3), (2, 2)], [(0, 4), (1, 3), (2, 2), (3, 1)], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)]], [[], [], [], [], []], [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)], [(0, 1), (0, 1), (0, 1), (0, 1), (0, 1)], [(1, -1), (1, -1), (1, -1), (1, -1), (1, -1)]]
+
+        ALGORITHM:
+
+        We set `r` support monomials where `r = hyp_no - 1` and a support monomial for the hyperplane and we for each one-parameter subgroup in the fundamental set, we check the Hilbert-Mumford 
+        numerical criterion for all the monomials of the hypersurface. For each monomial that satisfies the Hilbert- Mumford numerical criterion we add them to the list vm. For each support monomial
+        we also check which of the monomials in the hypersurface and the hyperplane respectively are less with respect to the monomial order for the given one-parameter subgroup `\gamma`. We add these
+        to the lists bm and bhm where the [vm, bm] correspond to the maximal destabilizing families for the complete intersection (bm here is a list of `r` families) where each of these correspond to one polynomial in
+        the complete intersection. bhm corresponds to the maximal destabilizing family of the hyperplane. If for two different tuples `vm_i, bm_i, bhm_i` and `vm_j, bm_j, bhm_j` we have `vm_i \susbeteq vm_j`,
+        `bm_i \susbeteq bm_j` and `bhm_i \susbeteq bhm_j` we only add the tuple `vm_j, bm_j, bhm_j` to our list of families (this is achieved via inclusion_condition()), which is the necessary condition that 
+        the families are maximal. We further remove any duplicate families and then we append each part of the tuple to the necessary list of families. We also keep that support monomials and destabilizing one-parameter
+        subgroups used, for convenience (and for checking whether the families are strictly semistable).
+
         """
+    
         # monomial_list1 corresponds to monomials in hypersurface, monomial_list2 corresponds to monomials in hyperplane
-        #onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         if onepslist == None:
             onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         monomial_list1 = Monomial.monomials(self.dim, self.deg)
@@ -354,12 +470,12 @@ class Problem:
             support_monomialst = [[] for i in range(r)]
         support_monomialsht = []
         gammat = []
-        for gamma in onepslist:
-            for moni in mon_combins: #maybe add here condition for k=1
-                for monxj in monomial_list2: 
+        for gamma in onepslist:   #checks H-M for all one-parameter subgroups
+            for moni in mon_combins:   #the support monomial(s) for the hypersurface
+                for monxj in monomial_list2:   #the support monomial for the hyperplane
                     cond = hilbert_mumford(moni, monxj, gamma, monomial_list1, monomial_list2,self.dim, self.hyp_no, t)
-                    if cond:
-                        vm = cond[0]
+                    if cond: #checks Hilbert-Mumford numerical criterion
+                        vm = cond[0] #generates the maximal destablizing families
                         bm = cond[1]
                         bhm = cond[2]
                     else:
@@ -370,7 +486,7 @@ class Problem:
                     maximal_dest_bhmt  = incl[2]
                     support_monomialst = incl[3]
                     support_monomialsht  = incl[4]
-                    gammat = incl[5] 
+                    gammat = incl[5] #adds recursively all families in a list of families
         for j in range(len(maximal_dest_vmt)):  #removes all extra elements not detected by method above - maybe also implement into seperate function?
             for k in range(len(maximal_dest_vmt)):
                 test1 = all(elem in maximal_dest_vmt[j] for elem in maximal_dest_vmt[k])
