@@ -1,4 +1,5 @@
-# Sage-Complete-intersections
+# Variations of GIT quotients for complete intersections package
+
  SAGE code for VGIT quotients of complete intersections
 
 Contains code for VGIT for complete intersections
