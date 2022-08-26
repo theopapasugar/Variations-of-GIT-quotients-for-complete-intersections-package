@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Papazachariou"
+  given-names: "Theodoros Stylianos"
+  orcid: "https://orcid.org/0000-0002-2597-0201"
+title: "Variations-of-GIT-quotients-for-complete-intersections-package"
+version: 1.0.0
+doi: 10.5281/zenodo.7024166
+date-released: 2022-08-25
+url: "https://github.com/theopapasugar/Variations-of-GIT-quotients-for-complete-intersections-package"
