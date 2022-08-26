@@ -3,9 +3,9 @@
 
 Contains code for VGIT for complete intersections
 
-The run file is completeintersections.sage. The user inserts the dimension, degree and number of hypersurfaces he wants for the VGIT quotient.
+The run file is completeintersections.sage. The user inserts the dimension, degree and number of hypersurfaces they want for the VGIT quotient.
 
-The file functions contains general functions for manipulating lists and testing conditions such as the centroid criterion.
+The file functions contains general functions for manipulating lists and testing conditions such as the centroid criterion, which checks if a tuple is strictly semistable.
 
 The file VGIT.sage contains the class Problem that contains the following: 
 
