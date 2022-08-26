@@ -856,16 +856,16 @@ def annihilator(vm_list, bhm_list, bm_need, ops, wall, dim, hyp_no):
                         summ_l = Monomial(el1) + summ_l 
                     if Monomial(monv).dot_product(OPS(ops)) + Monomial(summ_l).dot_product(OPS(ops)) == 0:
                         vm0.append(monv)
-                        break
+                        continue
             elif r == 1:
                 for monb in products:
                     if monv.dot_product(ops) + monb.dot_product(ops) == 0:
                         vm0.append(monv)
-                        break                    
+                        continue                    
             else:
                 if monv.dot_product(ops) == 0:
                     vm0.append(monv)
-                    break
+                    continue
     zipped_set = set(map(tuple, vm0))
     vm0 = list(map(Monomial, zipped_set))
     if len(vm0) == 0:

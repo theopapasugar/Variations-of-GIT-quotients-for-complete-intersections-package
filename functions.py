@@ -40,7 +40,7 @@ my_import("OPS")
 
 def equal_listoflists(listof1, listof2):
     r"""
-    Return True or False if listof1 has the same elements as listof1`.
+    Return True or False if listof1 has the same elements as listof1.
 
     INPUT:
 
@@ -72,46 +72,83 @@ def equal_listoflists(listof1, listof2):
 
 def maxsets_comparison(listoflistoflistvm_walls, listoflistoflistvm_chambers, listoflistoflistbm_walls,
                        listoflistoflistbm_chambers, listoflistoflistbhm_walls, listoflistoflistbhm_chambers, hyp_no):
-    """
+    r"""
+    Return True or False if listoflistoflistvm_walls and listoflistoflistvm_chambers and listoflistoflistbm_walls and listoflistoflistbm_chambers and listoflistoflistbhm_walls and listoflistoflistbhm_chambers contain the same elements.
 
-    @param listoflistoflistvm_walls: a list of list of lists corresponding to the destabilizing families of vm at the walls
-    @param listoflistoflistvm_chambers: a list of list of lists corresponding to the destabilizing families of vm at the chambers
-    @param listoflistoflistbm_walls: a list of list of lists corresponding to the destabilizing families of vm at the walls
-    @param listoflistoflistbm_chambers: a list of list of lists corresponding to the destabilizing families of bm at the chambers
-    @param listoflistoflistbhm_walls: a list of list of lists corresponding to the destabilizing families of bhm at the walls
-    @param listoflistoflistbhm_chambers: a list of list of lists corresponding to the destabilizing families of bhm at the chambers
-    @param hyp_no: int, the number of hypersurfaces in the complete intersection
-    @return: True if all chambers are contained in the walls, false if otherwise
+    INPUT:
+
+    - ``listoflistoflistvm_walls`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a wall for the complete intersection
+
+    - ``listoflistoflistvm_chambers`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a chamber for the complete intersection
+
+    - ``listoflistoflistbm_walls`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a wall for the complete intersection
+    
+    - ``listoflistoflistvm_chambers`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a chamber for the complete intersection
+
+    - ``listoflistoflistbhm_walls`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a wall for the hyperplane
+
+    - ``listoflistoflistbhm_chambers`` -- list of lists of Monomials; contains lists of lists of Monomials, representing the max families in a chamber for the hyperplane
+
+    - ``hyp_no`` -- int; the number of hypersurfaces
+
+
+    OUTPUT: True or False
+
+    EXAMPLES:
+
+    This example illustrates an equality ::
+
+        sage: max_vm_wall = [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]]
+        sage: max_vm_chamber =  [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]]
+        sage: max_bm_wall = [[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]]
+        sage: max_bm_chamber = [[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]]
+        sage: max_bhm_wall = [[(1, 0 , 0), (0, 1, 0)], [(0, 1, 0)], [(1, 0 , 0), (0, 0, 1)], [(1, 0, 0)], [(0, 1, 0), (0, 1, 0)]]
+        sage: max_bhm_chamber = [[(1, 0 , 0), (0, 1, 0)], [(0, 1, 0)], [(1, 0 , 0), (0, 0, 1)], [(0, 1, 0), (0, 1, 0)], [(1, 0, 0)]]
+        sage: hyp_numb = 2
+        sage: maxsets_comparison(max_vm_wall, max_vm_chamber, max_bm_wall, max_bm_chamber, max_bhm_wall, max_bhm_chamber, hyp_numb)
+        True
+
+    This example illustrates a falsehood ::
+
+        sage: max_vm_wall = [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]]
+        sage: max_vm_chamber =  [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)]]
+        sage: max_bm_wall = [[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)], [(1, 1, 0)]]
+        sage: max_bm_chamber = [[(0, 0, 2)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0)], [(0, 0, 2), (0, 1, 1), (0, 2, 0)]]
+        sage: max_bhm_wall = [[(1, 0 , 0), (0, 1, 0)], [(0, 1, 0)], [(1, 0 , 0), (0, 0, 1)], [(1, 0, 0)], [(0, 1, 0), (0, 1, 0)]]
+        sage: max_bhm_chamber = [[(1, 0 , 0), (0, 1, 0)], [(0, 1, 0)], [(1, 0 , 0), (0, 0, 1)], [(0, 1, 0), (0, 1, 0)], [(1, 0, 0)]]
+        sage: hyp_numb = 2
+        sage: maxsets_comparison(max_vm_wall, max_vm_chamber, max_bm_wall, max_bm_chamber, max_bhm_wall, max_bhm_chamber, hyp_numb)
+        False
     """
     counter = _sage_const_0 
     r = hyp_no - _sage_const_1  #TODO try to see if it is possible to encorporate for r != 1
     for i in range(len(listoflistoflistvm_walls)):
         for j in range(len(listoflistoflistvm_chambers)):  # need to incorporate for different k here first attempt
-            #if r > 1:
-             #   for k in range(r):
-             #   if equal_listoflists(listoflistoflistvm_walls[i], listoflistoflistvm_chambers[j]) and equal_listoflists(listoflistoflistbhm_walls[i], listoflistoflistbhm_chambers[j]) and equal_listoflists(listoflistoflistbm_walls[k][i], listoflistoflistbm_chambers[k][j]):
-#                    counter2 = 0
-#                    for k in range(r):
-#                        if equal_listoflists(listoflistoflistbm_walls[k][i], listoflistoflistbm_chambers[k][j]):
-#                            counter2 = counter2 + 1
-#                    if counter2 == r:
-#                        counter = counter + 1
-           # else:
-            if equal_listoflists(listoflistoflistvm_walls[i], listoflistoflistvm_chambers[j]) and equal_listoflists(listoflistoflistbhm_walls[i], listoflistoflistbhm_chambers[j]) and equal_listoflists(listoflistoflistbm_walls[i], listoflistoflistbm_chambers[j]):
-                counter = counter + _sage_const_1 
+            if r > _sage_const_1 :
+                if equal_listoflists(listoflistoflistvm_walls[i], listoflistoflistvm_chambers[j]) and equal_listoflists(listoflistoflistbhm_walls[i], listoflistoflistbhm_chambers[j]):
+                    counter2 = _sage_const_0 
+                    for k in range(r):
+                        if equal_listoflists(listoflistoflistbm_walls[k][i], listoflistoflistbm_chambers[k][j]):
+                            counter2 = counter2 + _sage_const_1 
+                    if counter2 == r:
+                        counter = counter + _sage_const_1 
+            elif r ==_sage_const_1 :
+                if equal_listoflists(listoflistoflistvm_walls[i], listoflistoflistvm_chambers[j]) and equal_listoflists(listoflistoflistbhm_walls[i], listoflistoflistbhm_chambers[j]) and equal_listoflists(listoflistoflistbm_walls[i], listoflistoflistbm_chambers[j]):
+                    counter = counter + _sage_const_1 
+            elif r == _sage_const_0 :
+                if equal_listoflists(listoflistoflistvm_walls[i], listoflistoflistvm_chambers[j]) and equal_listoflists(listoflistoflistbhm_walls[i], listoflistoflistbhm_chambers[j]):
+                    counter = counter + _sage_const_1 
     if len(listoflistoflistvm_walls) >= len(listoflistoflistvm_chambers):
         return counter >= len(listoflistoflistvm_chambers)
     if len(listoflistoflistvm_chambers) > len(listoflistoflistvm_walls):
         return counter >= len(listoflistoflistvm_walls)
 
-    # The following define some methods on lists in order to display the $N^-$ as functions
-
-
+    
 
 
 def mult_list(list1): #maybe add this also to class?
     r"""
-    Return the multiple of all elements of list1`.
+    Return the multiple of all elements of list1.
 
     INPUT:
 
@@ -145,13 +182,13 @@ def mult_list(list1): #maybe add this also to class?
 
 def max_monomial(monomial_list, gamma):
     r"""
-    Return the max monomial of the monomial list with respect to the one-parameter subgroup gamma`.
+    Return the max monomial of the monomial list with respect to the one-parameter subgroup `gamma`.
 
     INPUT:
 
-    - ``list1`` -- list of lists; contains lists of ints, corresponding to a list of monomials
+    - ``list1`` -- list of Monomials; contains lists of ints, corresponding to a list of monomials
 
-    - ``gamma`` -- list; corresponding to a one-parameter subgroup
+    - ``gamma`` -- OPS; corresponding to a one-parameter subgroup
 
 
     OUTPUT: list which is the max monomial
@@ -183,18 +220,80 @@ def max_monomial(monomial_list, gamma):
             return monomial_list[i]
 
 
-# This defines the centroid criterion
 
 def alpha_map(listvm, listbm, listbhm, t, gamma, hyp_no, dim):
-    """
+    r"""
+    Returns a np array which is the ouptut of the alpha map.
 
-    @param listvm: a list of lists corresponding to the destabilizing families of vm, where each sublist corresponds to a monomial
-    @param listbm: a list of lists corresponding to the destabilizing families of bm, where each sublist corresponds to a monomial
-    @param listbhm: a list of lists corresponding to the destabilizing families of bhm, where each sublist corresponds to a monomial
-    @param t: a float, corresponding to a wall/chamber
-    @param gamma: a list corresponding to a one-parameter subgroup
-    @param hyp_no: number of hypersurfaces in the complete intersection
-    @return: the np.arrray gen which is the alpha map of the above parameters
+    INPUT:
+
+    - ``listvm`` -- list of Monomials; contains lists of Monomials, representing the max family for the complete intersection for a specific wall 
+
+    - ``listbm`` -- list of Monomials; contains lists of Monomials, representing the max family for the complete intersection for a specific wall
+
+    - ``listbhm`` -- list of Monomials; contains lists of Monomials, representing the max family for the hyperplane section for a specific wall
+
+    - ``t`` -- float; the wall
+
+    - ``gamma`` -- OPS; a one-parameter subgroup
+
+    - ``hyp_no`` -- int; the number of hypersurfaces in the complete intersection
+
+    - ``dim`` -- int; the dimension of the problem
+
+    OUTPUT: numpy array 
+
+    EXAMPLES:
+
+    This example illustrates a generator in dimension 2 with hyp_no 2 ::
+
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((1, 1, -2))
+        sage: listvm = [(0, 0, 2), (0, 1, 1), (1, 0, 1)]
+        sage: listbm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)]
+        sage: listbhm = [(0, 0, 1)]
+        sage: alpha_map(listvm, listbm, listbhm, t, gamma, no_of_hypersurfaces, dimension)
+        [[0.  1.  3.5]
+         [1.  0.  3.5]
+         [0.  2.  2.5]
+         [1.  1.  2.5]
+         [2.  0.  2.5]
+         [0.  1.  3.5]
+         [1.  1.  2.5]
+         [0.  3.  1.5]
+         [1.  2.  1.5]
+         [2.  1.  1.5]
+         [1.  0.  3.5]
+         [1.  1.  2.5]
+         [1.  2.  1.5]
+         [2.  1.  1.5]
+         [3.  0.  1.5]]
+
+    This is a further example ::
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((5, -1, -4))
+        sage: listvm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+        sage: listbm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+        sage: listbhm = [(0, 0, 1)]
+        sage: alpha_map(listvm, listbm, listbhm, t, gamma, no_of_hypersurfaces, dimension) 
+         [[0.  1.  3.5]
+          [1.  0.  3.5]
+          [0.  2.  2.5]
+          [0.  1.  3.5]
+          [1.  1.  2.5]
+          [0.  3.  1.5]
+          [1.  0.  3.5]
+          [1.  1.  2.5]
+          [1.  2.  1.5]
+          [0.  2.  2.5]
+          [0.  3.  1.5]
+          [1.  2.  1.5]]
+
+
+
+    ALGORITHM:
+
+    For each monomial `I \in ` listvm, `J \in ` listbm with `I \neq J' and `x_i \in ` listbhm the maximal monomial with respect to the one-parameter subgroup 
+    gamma, the alpha map is defined as A(listvm, listbm, listbhm, t) = all possible `I + J + t*x_i`. As such, we find all different possible `I + J` from listvm
+    listbm that are different monomials, and we add the maximal monomial `x_i` times the wall t.
     """
     r = hyp_no - _sage_const_1 
     flag = [_sage_const_1000  for i in range(r)]
@@ -252,18 +351,45 @@ def alpha_map(listvm, listbm, listbhm, t, gamma, hyp_no, dim):
 
 
 def centroid_criterion(listvm, listbm, listbhm, t, gamma, dim, deg, hyp_no):
-    """
+    r"""
+    Returns True or False if the centroid criterion is satisfied.
 
-        @param listvm: a list of lists corresponding to the destabilizing families of vm, where each sublist corresponds to a monomial
-        @param listbm: a list of lists corresponding to the destabilizing families of bm, where each sublist corresponds to a monomial
-        @param listbhm: a list of lists corresponding to the destabilizing families of bhm, where each sublist corresponds to a monomial
-        @param t: a float, corresponding to a wall/chamber
-        @param gamma: a list corresponding to a one-parameter subgroup
-        @param dim: an int, the dimension of the embedded projective space
-        @param deg: an int, the degree of the hypersurfaces
-        @param hyp_no: number of hypersurfaces in the complete intersection
-        @return: True if centroid criterion holds, False otherwise
-        """
+    INPUT:
+
+    - ``listvm`` -- list of Monomials; contains lists of Monomials, representing the max family for the complete intersection for a specific wall 
+
+    - ``listbm`` -- list of Monomials; contains lists of Monomials, representing the max family for the complete intersection for a specific wall
+
+    - ``listbhm`` -- list of Monomials; contains lists of Monomials, representing the max family for the hyperplane section for a specific wall
+
+    - ``t`` -- float; the wall
+
+    - ``gamma`` -- OPS; a one-parameter subgroup
+
+    - ``dim`` -- int; the dimension of the problem
+
+    - ``deg`` -- int; the degree of the polynomials in the complete intersection
+
+    - ``hyp_no`` -- int; the number of hypersurfaces in the complete intersection
+
+    OUTPUT: True or False 
+
+    EXAMPLES:
+
+    This example illustrates a False centroid ::
+
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((1, 1, -2))
+        sage: listvm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)]
+        sage: listbm = [(0, 0, 2), (0, 1, 1), (1, 0, 1)]
+        sage: listbhm = [(0, 0, 1)]
+        sage: centroid_criterion(listvm, listbm, listbhm, t, gamma, dimension, degree, no_of_hypersurfaces)
+        False
+
+    ALGORITHM:
+
+    Checks if the convex hull generated by the alpha map above contains the point `(\frac{hyp_no*deg +t}{dim}, \dots, \frac{hyp_no*deg +t}{dim})`.
+    
+    """
     empty = np.array([])
     generator = alpha_map(listvm, listbm, listbhm, t, gamma, hyp_no, dim)
     if len(generator) < dim + _sage_const_2 :
@@ -287,11 +413,52 @@ def centroid_criterion(listvm, listbm, listbhm, t, gamma, dim, deg, hyp_no):
 
 
 
-# 
-#todo add docstrings for the below stuff
+
 
 
 def hilbert_mumford(moni, monxj, gamma, monomial_list1, monomial_list2, dim, hyp_no, t): #moni comes from mon_combs, monxj is supp mon from monomials of hyperplane
+    r"""
+    Checks the Hilbert-Mumford numerical criterion and generates the maximal destabilizing families depending on support monomials moni and monxj
+
+    INPUT:
+
+    - ``moni`` -- single or list of Monomials; contains lists of Monomials, representing the support monomials of the hypersurface - is a list if hyp_no > 2 
+
+    - ``monxj`` -- Monomial; Monomial representing the support monomials of the hyperplane 
+
+    - ``gamma`` -- OPS; a one-parameter subgroup
+
+    - ``monomial_list1`` -- list of Monomials; contains lists of Monomials, representing the monomials of the hypersurface 
+
+    - ``monomial_list2`` -- list of Monomials; contains lists of Monomials, representing the monomials of the hyperplane 
+
+    - ``dim`` -- int; the dimension of the problem
+
+    - ``hyp_no`` -- int; the number of hypersurfaces in the complete intersection
+
+    - ``t`` -- float; the wall
+
+    OUTPUT: a list of three elements  
+
+    EXAMPLES:
+
+    This example illustrates the construction of the maximal families given certain support monomials ::
+
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((1, 1, -2))
+        sage: supp_mon_hypersurface = Monomial((1, 0, 1))
+        sage: supp_mon_hyperplane = Monomial((0, 0, 1))
+        sage: monomial_hypersurface = Monomial.monomials(dimension, degree); monomial_hyperplane = Monomial.monomials(dimension, 1)
+        sage: hilbert_mumford(supp_mon_hypersurface, supp_mon_hyperplane, gamma, monomial_hypersurface, monomial_hyperplane, dimension, no_of_hypersurfaces, t)
+        [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 1)]]
+        
+
+    ALGORITHM:
+
+    For all monomials I in monomial_list_2 it checks whether `\langle I + moni + t*monxj, gamma\rangle \leq 0` and if it does it adds I to the list vm. Then we add 
+    all monomials in monomial_list_1 which are less than moni with respect to the monomial order and adds them to bm. Similarily it checks all monomials  in 
+    monomial_list2 which are less than monxj with respect to the monomial order and adds them to bhm.
+    
+    """
     # monomial_list1 = Monomial.monomials(self.dim, self.deg)
     # monomial_list2 = Monomial.monomials(self.dim, 1)
     flag = [_sage_const_1000 ]
@@ -353,6 +520,81 @@ def hilbert_mumford(moni, monxj, gamma, monomial_list1, monomial_list2, dim, hyp
 
 
 def inclusion_condition(gamma, t, vm, bm, bhm, moni, monxj, hyp_no, maximal_dest_vmt, maximal_dest_bmt, maximal_dest_bhmt, support_monomialst, support_monomialsht, gammat): 
+    r"""
+    Checks the whether vm is in maximal_dest_vmt, bm is in maximal_dest_bmt, and bhm is in maximal_dest_bhmt and if not all three belong to the repsective lists they are added and the maximal lists are returned.
+
+    INPUT:
+
+    - ``gamma`` -- OPS; a one-parameter subgroup
+
+    - ``t`` -- float; the wall
+
+    - ``vm`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hypersurface
+
+    - ``bm`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hypersurface
+
+    - ``bhm`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hyperplane
+
+    - ``moni`` -- single or list of Monomials; contains lists of Monomials, representing the support monomials of the hypersurface - is a list if hyp_no > 2 
+
+    - ``monxj`` -- Monomial; Monomial representing the support monomials of the hyperplane 
+
+    - ``hyp_no`` -- int; the number of hypersurfaces in the complete intersection
+
+    - ``maximal_dest_vmt`` -- list of lists Monomials; contains all lists of Monomials, corresponding to all families of the hypersurface
+
+    - ``maximal_dest_bmt`` -- list of lists Monomials; contains all lists of Monomials, corresponding to all families of the hypersurface
+
+    - ``maximal_dest_bhmt`` -- list of lists Monomials; contains all lists of Monomials, corresponding to all families of the hyperplane
+
+    - ``support_monomialst`` -- list of Monomials; contains lists of Monomials, corresponding to all support monomials of the hypersurface
+
+    - ``support_monomialsht`` -- list of Monomials; contains lists of Monomials, corresponding to all support monomials of the hyperplane
+
+    - ``gammat`` -- list of OPS; contains OPS, corresponding to all destabilizing OPS for each family
+        
+
+    OUTPUT: a list of six elements containing the families 
+
+    EXAMPLES:
+
+    This example illustrates some destabilizing families which don't belong in the maximal families, and are added ::
+
+
+    sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((5, -1, -4))
+    sage: supp_mon_hypersurface = Monomial((1, 0, 1))
+    sage: supp_mon_hyperplane = Monomial((0, 0, 1))
+    sage: max_vmt = [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)]]
+    sage: max_bmt = [[(0, 0, 2), (0, 1, 1), (1, 0, 1)]]
+    sage: max_bhmt = [[(0, 0, 1)]]
+    sage: vm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+    sage: bm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+    sage: bhm = [(0, 0, 1)]
+    sage: support_monomials_t = [Monomial((1, 0, 1))]
+    sage: support_monomialsh_t = [Monomial((0, 0, 1))]
+    sage: gammat = [OPS((1, 1, -2))]
+    sage: inclusion_condition(gamma, t, vm, bm, bhm, supp_mon_hypersurface, supp_mon_hyperplane, no_of_hypersurfaces, max_vmt, max_bmt, max_bhmt, support_monomialst, support_monomialsht, gammat)
+    [[[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)],[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]], [[(0, 0, 1)], [(0, 0, 1)]], [(1, 0, 1), (1, 0, 1)], [(1, 1, -2), (5, -1, -4)]]
+
+    This example illustrates some destabilizing families which do belong in the maximal families, and are not added ::
+
+    sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((5, -1, -4))
+    sage: supp_mon_hypersurface = Monomial((1, 0, 1))
+    sage: supp_mon_hyperplane = Monomial((0, 0, 1))
+    sage: max_vmt = [[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]]
+    sage: max_bmt = [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]]
+    sage: max_bhmt = [[(0, 0, 1)], [(0, 0, 1)]]
+    sage: vm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+    sage: bm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+    sage: bhm = [(0, 0, 1)]
+    sage: support_monomials_t = [Monomial((1, 0, 1))]
+    sage: support_monomialsh_t = [Monomial((0, 0, 1))]
+    sage: gammat = [OPS((1, 1, -2))]
+    sage: inclusion_condition(gamma, t, vm, bm, bhm, supp_mon_hypersurface, supp_mon_hyperplane, no_of_hypersurfaces, max_vmt, max_bmt, max_bhmt, support_monomialst, support_monomialsht, gammat)
+    [[[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0), (1, 1, 0), (2, 0, 0)],[(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]], [[(0, 0, 2), (0, 1, 1), (1, 0, 1)], [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]], [[(0, 0, 1)], [(0, 0, 1)]], [(1, 0, 1), (1, 0, 1)], [(1, 1, -2), (5, -1, -4)]]
+        
+    
+    """
     r = hyp_no-_sage_const_1 
     if len(maximal_dest_vmt) == _sage_const_0 :
         # if vm not in maximal_dest_vmt and bm[i] not in maximal_dest_bmt[i] and bhm not in maximal_dest_bhmt:
@@ -520,7 +762,48 @@ def inclusion_condition(gamma, t, vm, bm, bhm, moni, monxj, hyp_no, maximal_dest
                 return [maximal_dest_vmt, maximal_dest_bmt, maximal_dest_bhmt, support_monomialst, support_monomialsht, gammat]
             
 
-def annihilator(vm_list, bhm_list, bm_need, ops, wall, dim, hyp_no): #maybe break this into smaller pieces?
+def annihilator(vm_list, bhm_list, bm_need, ops, wall, dim, hyp_no): 
+    r"""
+    Checks the Hilbert-Mumford numerical criterion and generates the maximal destabilizing families depending on support monomials moni and monxj
+
+    INPUT:
+
+    - ``vm_list`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hypersurface
+
+    - ``bm_list`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hypersurface
+
+    - ``bhm_list`` -- list of Monomials; contains different monomials, corresponding to a maximal family of the hyperplane
+
+    - ``ops`` -- OPS; a one-parameter subgroup
+
+    - ``wall`` -- float; the wall    
+
+    - ``dim`` -- int; the dimension of the problem
+
+    - ``hyp_no`` -- int; the number of hypersurfaces in the complete intersection
+
+
+    OUTPUT: a list of three elements  
+
+    EXAMPLES: TODO find appropriate example
+
+    This example illustrates the construction of the maximal families given certain support monomials ::
+
+        sage: dimension = 2; degree = 2; no_of_hypersurfaces = 2; t = 1/2; gamma = OPS((1, 1, -2))
+        sage: vm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+        sage: bm = [(0, 0, 2), (0, 1, 1), (1, 0, 1), (0, 2, 0)]
+        sage: bhm = [(0, 0, 1)]
+        sage: annihilator(vm, bhm, bm, gamma, t, dimension, no_of_hypersurfaces)
+        [[(0, 1, 1), (0, 2, 0), (1, 0, 1)], [(0, 2, 0)], [(0, 0, 1)]]
+    
+
+    ALGORITHM:
+
+    For all monomials I in vm_list we check checks whether there exist monomials moni in bm_list and monxj in bhm_list such that `\langle I + moni + wall*monxj, ops\rangle = 0`
+    and if it does it adds I to the list v0. Then we add all monomials in bm_list which have a less or equal inner product with ops than moni with ops adds those to b0. Similarily 
+    we add all monomials in bhm_list which have a less or equal inner product with ops than monxj with ops adds those to bh0. If any of these are empty we return nothing.
+    
+    """
     d = dim + _sage_const_1 
     r = hyp_no - _sage_const_1 
     flag = [_sage_const_10000 ]
@@ -578,16 +861,16 @@ def annihilator(vm_list, bhm_list, bm_need, ops, wall, dim, hyp_no): #maybe brea
                         summ_l = Monomial(el1) + summ_l 
                     if Monomial(monv).dot_product(OPS(ops)) + Monomial(summ_l).dot_product(OPS(ops)) == _sage_const_0 :
                         vm0.append(monv)
-                        break
+                        continue
             elif r == _sage_const_1 :
                 for monb in products:
                     if monv.dot_product(ops) + monb.dot_product(ops) == _sage_const_0 :
                         vm0.append(monv)
-                        break                    
+                        continue                    
             else:
                 if monv.dot_product(ops) == _sage_const_0 :
                     vm0.append(monv)
-                    break
+                    continue
     zipped_set = set(map(tuple, vm0))
     vm0 = list(map(Monomial, zipped_set))
     if len(vm0) == _sage_const_0 :
@@ -654,7 +937,37 @@ def annihilator(vm_list, bhm_list, bm_need, ops, wall, dim, hyp_no): #maybe brea
     return [vm0, bm0, bhm0]
 
 
-def printer(vm_list, bm_list, bhm_list, wall, dim, hyp_no): #this is for annihilator but it should work with everything
+def printer(vm_list, bm_list, bhm_list, wall, dim, hyp_no): 
+    r"""
+    Converts lists of Monomials to their corresponding equations for a specific wall, dimension and number of hypersurfaces. 
+
+    INPUT:
+
+    - ``vm_list`` -- list of Monomials; contains different monomials
+
+    - ``bm_list`` -- list of Monomials; contains different monomials
+
+    - ``bhm_list`` -- list of Monomials; contains different monomials
+
+    - ``wall`` -- float; a specific wall
+
+    - ``dim`` -- int; the dimension of the problem
+
+    - ``hyp_no`` -- int; the number of hypersurfaces
+
+
+    OUTPUT: a list of three elements containing the converted equations
+
+    EXAMPLES:
+
+    This example illustrates a simple convertion in dimension 1 and 2 hypersurfaces ::
+
+        sage: vm = [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)]; bm = [(0, 4)]; bhm = [(1, 0), (0, 1)]
+        sage: printer(vm, bm, bhm, wall, hyps_numb)
+        [d4*x0^4 + d3*x0^3*x1 + d2*x0^2*x1^2 + d1*x0*x1^3 + d0*x1^4, e0*x1^4, g0*x0 + g1x1 
+
+
+    """
     d = dim + _sage_const_1 
     tl = var('x', n=d)
     r = hyp_no - _sage_const_1 

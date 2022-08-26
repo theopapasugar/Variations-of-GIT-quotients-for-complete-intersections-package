@@ -154,7 +154,7 @@ class Problem:
 
 
 
-    def max_semi_dest_sets(self, onepslist=None):
+    def max_semi_dest_sets(self, onepslist):
         r"""
         Return the vgit non stable elements for all walls. If onepslist=None then the program generates the fundamental set of one-parameter subgroups.
 
@@ -405,7 +405,7 @@ class Problem:
         return [maximal_dest_vm_walls, maximal_dest_vm_chambers, maximal_dest_bm_walls, maximal_dest_bm_chambers, maximal_dest_bhm_walls, maximal_dest_bhm_chambers, support_monomials_walls, support_monomials_chambers, support_monomialsh_walls, support_monomialsh_chambers, gamma_walls, gamma_chambers, used_walls, used_chambers]
 
 
-    def max_sets_t(self, onepslist=None, t=0):
+    def max_sets_t(self, onepslist, t=0):
         r"""
         Return the vgit non stable elements for a specific wall. The default value is t=0 which corresponds to a GIT problem. If onepslist=None then the program generates the fundamental set of one-parameter subgroups.
 

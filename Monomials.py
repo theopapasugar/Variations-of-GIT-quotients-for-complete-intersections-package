@@ -6,12 +6,23 @@ from sage.all_cmdline import *   # import sage library
 _sage_const_1 = Integer(1)#include imports etc here
 
 class Original(tuple):
+    r"""
+    Wrapper class of tuple, contains basic functions to use with tuples.
+
+    EXAMPLES:
+
+        sage: test1 = Original([1, 2, 3, 4])
+        sage: test1
+        (1, 2, 3, 4)
+
+    """
+
     def __init(self, data):
         self = tuple(data)
 
     def dot_product(self, other):
         r"""
-        Return the dot product of list1 and list2`.
+        Return the dot product of list1 and list2.
 
         INPUT:
 
@@ -41,7 +52,7 @@ class Original(tuple):
     
     def __add__(self, other):
         r"""
-        Return the sum of two monomials`.
+        Return the sum of two monomials.
 
         INPUT:
 
@@ -65,7 +76,7 @@ class Original(tuple):
     
     def __sub__(self, other):
         r"""
-        Return the subtraction of two monomials`.
+        Return the subtraction of two monomials.
 
         INPUT:
 
@@ -89,13 +100,22 @@ class Original(tuple):
 
 
 class Monomial(Original):
-    """docstring for Monomial"""
+    r"""
+    Wrapper class of Original, contains basic functions to use with Monomial.
+
+    EXAMPLES:
+
+        sage: test1 = Monomial([1, 2, 3, 4])
+        sage: test1
+        (1, 2, 3, 4)
+
+    """
     def __init__(self, data):
         self = Original(data)
 
     def gamma_bigger_e(self, other, gamma): #runs as mon1.gaama_bigger_e(mon2, gamma),
         r"""
-        Return True or False if other is bigger in the monomial order than self`.
+        Return True or False if other is bigger in the monomial order than self.
 
         INPUT:
 
@@ -139,7 +159,7 @@ class Monomial(Original):
 
     def to_the_power(self, list1):
         r"""
-        Return the powers of elements of list1 with respect to the elements of self`.
+        Return the powers of elements of list1 with respect to the elements of self.
 
         INPUT:
 
@@ -170,7 +190,7 @@ class Monomial(Original):
     @staticmethod
     def monomials(dimension, degree):
         r"""
-        Return the homogeneous monomials of degree d in dimension n`.
+        Return the homogeneous monomials of degree d in dimension `n`.
 
         INPUT:
 

@@ -12,6 +12,8 @@ def my_import(module_name, func_name='*'):
 #my_import("OPS")
 my_import("VGIT")
 
+import pickle
+
 
 class Printout(Problem):
     r"""
@@ -3035,7 +3037,12 @@ class Printout(Problem):
         values of true walls/ chambers and append them into a list.
 
         """
-        onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
+        #I want to check something so I will upload specific opset file
+        if 1 == 1:
+            with open(r"ops_set_tester.txt", "rb") as input_file:
+                onepslist = pickle.load(input_file)  
+        else:
+            onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         r = self.hyp_no - 1
         d = self.dim + 1
         f = open("VGIT_output_intersections.txt", "a")
@@ -3216,7 +3223,7 @@ class Printout(Problem):
         f.close()
 
 
-    def printout_wall(self, onepslist=None, wall=0): 
+    def printout_wall(self, onepslist, wall=0): 
         r"""
         Printout the vgit non stable elements for specific wall in a txt file.
 
