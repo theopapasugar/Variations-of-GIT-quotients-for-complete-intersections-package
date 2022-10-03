@@ -1,0 +1,97 @@
+Solving problem in P^ 3  degree  2  and  2  hypersurfaces for wall t= 0
+Family 0
+vominus:
+d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e0*x3^2
+Support monomial
+(0, 0, 0, 2)
+One-parameter subgroup:
+(5, 4, -3, -6)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 1
+vominus:
+d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(1, 0, 0, 1)
+One-parameter subgroup:
+(5, 4, -3, -6)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 2
+vominus:
+d0*x3^2
+bominuss:
+e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(2, 0, 0, 0)
+One-parameter subgroup:
+(5, 4, -3, -6)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 3
+vominus:
+d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e2*x2^2 + e1*x2*x3 + e0*x3^2
+Support monomial
+(0, 0, 2, 0)
+One-parameter subgroup:
+(25, 9, -15, -19)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 4
+vominus:
+d2*x2^2 + d1*x2*x3 + d0*x3^2
+bominuss:
+e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(0, 2, 0, 0)
+One-parameter subgroup:
+(25, 9, -15, -19)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 5
+vominus:
+d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(0, 1, 0, 1)
+One-parameter subgroup:
+(3, 0, -1, -2)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 6
+vominus:
+d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(1, 0, 0, 1)
+One-parameter subgroup:
+(3, 0, -1, -2)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 7
+vominus:
+d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+bominuss:
+e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial
+(0, 2, 0, 0)
+One-parameter subgroup:
+(9, -1, -3, -5)
+##############################
+Not strictly t-semistable
+#######################################################

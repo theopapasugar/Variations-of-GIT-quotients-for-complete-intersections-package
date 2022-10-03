@@ -43,8 +43,8 @@ import pickle
 
 #User to add their Dimension +degree and number of hypersurfaces in complete intersection
 
-dimension = 1
-degree = 3
+dimension = 3
+degree = 2
 no_of_hypersurfaces = 2
 
 #params = Problem(dimension, degree, no_of_hypersurfaces)
@@ -65,8 +65,11 @@ opset = OPS.ops_set(dimension, degree, no_of_hypersurfaces)
 print(opset)
 
 
-#with open(r"ops_set_tester.txt", "rb") as input_file:
-#	opset = pickle.load(input_file)	
+# with open(r"ops_set_p4_old.txt", "rb") as input_file:
+# 	opset = pickle.load(input_file)	
+# print(opset[0])
+# print(opset)	
+# print(len(opset))
 
 #if you only want to find the walls/ chambers do the below
 #walls = params.all_walls(opset)
@@ -84,11 +87,11 @@ print(opset)
 
 #Problem.printout(opset, dimension, degree, no_of_hypersurfaces)
 
-#params.printout()
+# params.printout()
 
 #if you want to run only classical GIT case, i.e. t=0 run the following:
 #print(opset)
-params.printout_wall(opset, 0)
+# params.printout_wall(opset, 0)
 
 #To find walls and chambers for a particular problem run the below
 #walls = params.all_walls(opset)
@@ -97,7 +100,17 @@ params.printout_wall(opset, 0)
 
 #if you want to run only for specific wall t=a run the following:
 
-#params.printout_wall(opset, a)
+# p4_walls_chambers = [0, 37/228, 1/6, 327/1162, 2/7, 113/304, 3/8, 1039/1914, 6/11, 355/534, 2/3, 37/38, 1] 
+p3_walls_chambers = [0, 74/171, 4/9, 37/57, 2/3, 31/40, 4/5, 33/34, 1, 74/57, 4/3]
+
+for wall in p3_walls_chambers:
+	params.printout_wall(opset, wall)
+
+# params.printout_wall(opset, 0)
+
+# if you want to find unstable elements for a wall t = a run the following:
+
+# params.printout_wall_semi(opset,0)
 
 def GIT(dim, deg, hyp_no):
 	r"""

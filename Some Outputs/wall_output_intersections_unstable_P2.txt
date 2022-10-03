@@ -1,0 +1,61 @@
+Solving problem in P^ 2  degree  2  and  2  hypersurfaces for wall t= 0
+Family 0
+vominus:
+d5*x0^2 + d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+bominuss:
+e0*x2^2
+Support monomial
+(0, 0, 2)
+One-parameter subgroup:
+(4, 1, -5)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 1
+vominus:
+d2*x0*x2 + d1*x1*x2 + d0*x2^2
+bominuss:
+e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial
+(1, 0, 1)
+One-parameter subgroup:
+(4, 1, -5)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 2
+vominus:
+d0*x2^2
+bominuss:
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial
+(2, 0, 0)
+One-parameter subgroup:
+(4, 1, -5)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 3
+vominus:
+d4*x0*x1 + d3*x1^2 + d2*x0*x2 + d1*x1*x2 + d0*x2^2
+bominuss:
+e2*x1^2 + e1*x1*x2 + e0*x2^2
+Support monomial
+(0, 2, 0)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+Not strictly t-semistable
+#######################################################
+Family 4
+vominus:
+d2*x1^2 + d1*x1*x2 + d0*x2^2
+bominuss:
+e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+Support monomial
+(1, 1, 0)
+One-parameter subgroup:
+(2, -1, -1)
+##############################
+Not strictly t-semistable
+#######################################################

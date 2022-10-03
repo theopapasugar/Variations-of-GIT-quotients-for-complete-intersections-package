@@ -3038,11 +3038,11 @@ class Printout(Problem):
 
         """
         #I want to check something so I will upload specific opset file
-        if 1 == 1:
-            with open(r"ops_set_tester.txt", "rb") as input_file:
-                onepslist = pickle.load(input_file)  
-        else:
-            onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
+        #if 1 == 2:
+        #    with open(r"ops_set_tester.txt", "rb") as input_file:
+        #         onepslist = pickle.load(input_file)  
+        # #else:
+        onepslist = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         r = self.hyp_no - 1
         d = self.dim + 1
         f = open("VGIT_output_intersections.txt", "a")
@@ -3150,7 +3150,7 @@ class Printout(Problem):
                     eq_sum_bh0 = pr[2] 
                     print('Potential closed orbit', file=f)
                     print('V^0 = ', eq_sum_v0, file=f)
-                    if r > 0:
+                    if r > 1:
                         print('The B^0 are: ', file=f)
                         for m in range(r):
                             print(eq_sum_b0[m], file=f)
@@ -3384,6 +3384,7 @@ class Printout(Problem):
             opset = OPS.ops_set(self.dim, self.deg, self.hyp_no)
         families = self.max_sets_t(opset, wall)
         vms = families[0]
+        print(len(vms))
         if r > 1:
             bms = [0 for i in range(r)]
             for i in range(r):
@@ -3393,6 +3394,8 @@ class Printout(Problem):
         bhms = []
         if wall != 0:
             bhms = families[2]
+        else:
+            bhms = [[] for j in range(len(vms))]
         if r > 1:
             supp_mons = [0 for i in range(r)]
             for i in range(r):
@@ -3401,6 +3404,7 @@ class Printout(Problem):
             supp_mons = families[3]
         supp_mons_h = families[4]    
         gammas = families[5]
+        print(gammas)
         for i in range(len(vms)):
             bms_needed = []
             if r > 1:
@@ -3444,7 +3448,7 @@ class Printout(Problem):
             print(gammas[i], file=f)
             print('##############################', file=f)
                 #add if centroid crit + generate annihilator
-            if centroid_criterion(vms[i], bms_needed, bhms, wall, gammas[i], self.dim, self.deg, self.hyp_no):
+            if centroid_criterion(vms[i], bms_needed, bhms[i], wall, gammas[i], self.dim, self.deg, self.hyp_no):
                 print('This is a strictly semistable family', file=f)
                 an = []
                 if wall == 0:
@@ -3452,6 +3456,8 @@ class Printout(Problem):
                 if wall > 0:
                     an = annihilator(vms[i], bhms[i], bms_needed, gammas[i], wall, self.dim, self.hyp_no)
                 vm0 = an[0]
+                if len(vm0) == 0:
+                    continue
                 bm0 = an[1]
                 bhm0 = an[2]
                 pr = printer(vm0, bm0, bhm0, wall, self.dim, self.hyp_no)
@@ -3468,6 +3474,126 @@ class Printout(Problem):
                 elif r == 1:
                     print('B^0 = ', eq_sum_b0, file=f)
                 if wall != 0:
+                    print('B^0_h = ', eq_sum_bh0, file=f)
+                print('#######################################################', file=f)
+            else:
+                print('Not strictly t-semistable', file=f)
+                print('#######################################################', file=f)
+
+def printout_wall_semi(self, onepslist=None, wall=0 ): 
+        r"""
+        Printout the vgit non stable elements for specific wall in a txt file.
+
+        INPUT:
+
+        - ``self`` -- Printout; the dimension, degree and number of hypersurfaces for the problem
+        - ``onepslist`` -- list of OPS; a list of OPS of fractions or ints, Default None
+        - ``wall`` -- float; a specific wall, Default 0
+
+        OUTPUT: None
+
+       
+        """
+        r = self.hyp_no - 1 
+        d = self.dim + 1 
+        tl = var('x', n=d)
+        f = open("wall_output_intersections_unstable.txt", "a")
+        print('Solving problem in P^', self.dim, ' degree ', self.deg, ' and ', self.hyp_no, ' hypersurfaces for wall t=', wall, file=f) 
+        opset = onepslist
+        if onepslist == None:
+            opset = OPS.ops_set(self.dim, self.deg, self.hyp_no)
+        families = self.max_semi_sets_t(opset, wall)
+        vominuss = families[0 ]
+        print(len(vominuss))
+        if r > 1 :
+            bominuss = [0  for i in range(r)]
+            for i in range(r):
+                bominuss[i] = families[1 ][i]
+        else:
+            bominuss = families[1 ]
+        bhominuss = []
+        if wall != 0 :
+            bhominuss = families[2 ]
+        else:
+            bhominuss = [[] for j in range(len(vominuss))]
+        if r > 1 :
+            supp_mons = [0  for i in range(r)]
+            for i in range(r):
+                supp_mons[i] = families[3 ][i]
+        else:
+            supp_mons = families[3 ]
+        supp_mons_h = families[4 ]    
+        gammas = families[5 ]
+        print(gammas)
+        for i in range(len(vominuss)):
+            bominuss_needed = []
+            if r > 1 :
+                bominuss_needed = [0  for i in range(r)]
+                for m in range(r):
+                    bominuss_needed[m] = bominuss[m][i]
+            else:
+                bominuss_needed = bominuss[i]
+            equations = []
+            if wall == 0 :
+                equations = printer(vominuss[i], bominuss_needed, [], wall, self.dim, self.hyp_no)
+            if wall > 0 :
+                equations = printer(vominuss[i], bominuss_needed, bhominuss[i], wall, self.dim, self.hyp_no)
+            eq_sum_v = equations[0 ]
+            eq_sum_b = equations[1 ]
+            eq_sum_bh = equations[2 ]
+            print('Family', i, file=f)
+            print('vominus:', file=f)
+            print(eq_sum_v, file=f)
+            if r > 1 :
+                print('The bominuss are:', file=f)
+                for k in range(r):
+                    print(k, file=f)
+                    print(eq_sum_b[k], file=f)
+            elif r == 1 :
+                print('bominuss:', file=f)
+                print(eq_sum_b, file=f)
+            if wall != 0 :
+                print('bhominus:', file=f)
+                print(eq_sum_bh, file=f)
+                print('Support monomial hyperplane', file=f)
+                print(supp_mons[i], file=f)    
+            if r > 1 :
+                for m in range(r):
+                    print('Support monomial', m, file=f)
+                    print(supp_mons[m][i], file=f)
+            elif r == 1 :
+                print('Support monomial', file=f)
+                print(supp_mons[i], file=f)
+            print('One-parameter subgroup:', file=f)
+            print(gammas[i], file=f)
+            print('##############################', file=f)
+                #add if centroid crit + generate annihilator
+            if centroid_criterion(vominuss[i], bominuss_needed, bhominuss[i], wall, gammas[i], self.dim, self.deg, self.hyp_no):
+                print('This is a strictly semistable family', file=f)
+                an = []
+                if wall == 0 :
+                    an = annihilator(vominuss[i], [], bominuss_needed, gammas[i], wall, self.dim, self.hyp_no)
+                if wall > 0 :
+                    an = annihilator(vominuss[i], bhominuss[i], bominuss_needed, gammas[i], wall, self.dim, self.hyp_no)
+                vominus0 = an[0 ]
+                if len(vominus0) == 0:
+                    continue
+                bominus0 = an[1 ]
+                bhominus0 = an[2 ]
+                pr = printer(vominus0, bominus0, bhominus0, wall, self.dim, self.hyp_no)
+                eq_sum_v0 = pr[0 ]
+                eq_sum_b0 = pr[1 ]
+                eq_sum_bh0 = pr[2 ] 
+                print('Potential closed orbit', file=f)
+                print('V^0 = ', eq_sum_v0, file=f)
+                if r > 1 :
+                    print('The B^0 are: ', file=f)
+                    for m in range(r):
+                        print(m, file=f)
+                        print(eq_sum_b0[m], file=f) 
+                elif r == 1 :
+                    print('B^0 = ', eq_sum_b0, file=f)
+                if wall != 0 :
                     print('B^0_h = ', eq_sum_bh0, file=f)
                 print('#######################################################', file=f)
             else:

@@ -1,0 +1,183 @@
+Solving problem in P^ 4  degree  2  and  2  hypersurfaces for wall t= 0
+Solving problem in P^ 4  degree  2  and  2  hypersurfaces for wall t= 0
+Solving problem in P^ 4  degree  2  and  2  hypersurfaces for wall t= 0
+Family 0
+vominus:
+d7*x2^2 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e7*x2^2 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 0, 2, 0, 0)
+One-parameter subgroup:
+[44, 19, -1, -11, -51]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 1
+vominus:
+d14*x0^2 + d13*x0*x1 + d12*x1^2 + d11*x0*x2 + d10*x1*x2 + d9*x2^2 + d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e2*x3^2 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 0, 0, 2, 0)
+One-parameter subgroup:
+[42, 37, 17, -43, -53]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 2
+vominus:
+d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 1, 0)
+One-parameter subgroup:
+[42, 37, 17, -43, -53]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 3
+vominus:
+d2*x3^2 + d1*x3*x4 + d0*x4^2
+bominuss:
+e14*x0^2 + e13*x0*x1 + e12*x1^2 + e11*x0*x2 + e10*x1*x2 + e9*x2^2 + e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(2, 0, 0, 0, 0)
+One-parameter subgroup:
+[42, 37, 17, -43, -53]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 4
+vominus:
+d9*x1^2 + d8*x1*x2 + d7*x2^2 + d6*x1*x3 + d5*x2*x3 + d4*x3^2 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e9*x1^2 + e8*x1*x2 + e7*x2^2 + e6*x1*x3 + e5*x2*x3 + e4*x3^2 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 2, 0, 0, 0)
+One-parameter subgroup:
+[9, -1, -1, -1, -6]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 5
+vominus:
+d10*x1^2 + d9*x1*x2 + d8*x2^2 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e6*x2^2 + e5*x2*x3 + e4*x3^2 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 1, 0, 0, 1)
+One-parameter subgroup:
+[16, 1, -4, -4, -9]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 6
+vominus:
+d6*x2^2 + d5*x2*x3 + d4*x3^2 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e10*x1^2 + e9*x1*x2 + e8*x2^2 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 0, 1)
+One-parameter subgroup:
+[16, 1, -4, -4, -9]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 7
+vominus:
+d11*x1^2 + d10*x1*x2 + d9*x2^2 + d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e6*x1*x3 + e5*x2*x3 + e4*x3^2 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 1, 0, 1, 0)
+One-parameter subgroup:
+[6, 1, 1, -4, -4]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 8
+vominus:
+d6*x1*x3 + d5*x2*x3 + d4*x3^2 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e11*x1^2 + e10*x1*x2 + e9*x2^2 + e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 1, 0)
+One-parameter subgroup:
+[6, 1, 1, -4, -4]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 9
+vominus:
+d9*x2^2 + d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 0, 1)
+One-parameter subgroup:
+[6, 6, 1, -4, -9]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 10
+vominus:
+d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e9*x2^2 + e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 1, 0)
+One-parameter subgroup:
+[6, 6, 1, -4, -9]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 11
+vominus:
+d12*x1^2 + d11*x0*x2 + d10*x1*x2 + d9*x2^2 + d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e5*x2^2 + e4*x2*x3 + e3*x3^2 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(0, 0, 2, 0, 0)
+One-parameter subgroup:
+[11, 1, -4, -4, -4]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 12
+vominus:
+d5*x2^2 + d4*x2*x3 + d3*x3^2 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e12*x1^2 + e11*x0*x2 + e10*x1*x2 + e9*x2^2 + e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 1, 0, 0)
+One-parameter subgroup:
+[11, 1, -4, -4, -4]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 13
+vominus:
+d14*x0^2 + d13*x0*x1 + d12*x1^2 + d11*x0*x2 + d10*x1*x2 + d9*x2^2 + d8*x0*x3 + d7*x1*x3 + d6*x2*x3 + d5*x3^2 + d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(1, 0, 0, 0, 1)
+One-parameter subgroup:
+[1, 1, 1, 1, -4]
+##############################
+Not strictly t-semistable
+#######################################################
+Family 14
+vominus:
+d4*x0*x4 + d3*x1*x4 + d2*x2*x4 + d1*x3*x4 + d0*x4^2
+bominuss:
+e14*x0^2 + e13*x0*x1 + e12*x1^2 + e11*x0*x2 + e10*x1*x2 + e9*x2^2 + e8*x0*x3 + e7*x1*x3 + e6*x2*x3 + e5*x3^2 + e4*x0*x4 + e3*x1*x4 + e2*x2*x4 + e1*x3*x4 + e0*x4^2
+Support monomial
+(2, 0, 0, 0, 0)
+One-parameter subgroup:
+[1, 1, 1, 1, -4]
+##############################
+Not strictly t-semistable
+#######################################################

@@ -1,0 +1,1738 @@
+Solving for complete intersection of degree 2 with  2 hypersurfaces and hyperplane section in P^ 3
+Found false walls
+The walls are [0, 4/9, 2/3, 4/5, 1, 4/3]
+The chambers are [55/126, 49/75, 51/65, 49/50, 55/42]
+Solving for wall 0
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (0, 0, 2, 0)
+1-ps:  (1, 1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d2*x0^2 + d0*x0*x1 + d1*x1^2
+The B^0 is: 
+e2*x2^2 + e1*x2*x3 + e0*x3^2
+#######################################################
+Case 2
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (1, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d3*x0*x2 + d2*x1*x2 + d1*x0*x3 + d0*x1*x3
+The B^0 is: 
+e3*x0*x2 + e2*x1*x2 + e1*x0*x3 + e0*x1*x3
+#######################################################
+Case 3
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (2, 0, 0, 0)
+1-ps:  (1, 1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+The B^0 is: 
+e2*x0^2 + e1*x0*x1 + e0*x1^2
+#######################################################
+Case 4
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (1, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d3*x0^2 + d0*x0*x1 + d4*x1^2 + d2*x0*x2 + d1*x1*x2 + d5*x2^2
+The B^0 is: 
+e2*x0*x3 + e1*x1*x3 + e0*x2*x3
+#######################################################
+Case 5
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (2, 0, 0, 0)
+1-ps:  (1, 1, 1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d2*x0*x3 + d0*x1*x3 + d1*x2*x3
+The B^0 is: 
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+#######################################################
+Case 6
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (1, 0, 0, 1)
+1-ps:  (1, 0, 0, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x1^2 + d2*x1*x2 + d3*x2^2 + d1*x0*x3
+The B^0 is: 
+e3*x1^2 + e2*x1*x2 + e1*x2^2 + e0*x0*x3
+#######################################################
+Case 7
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (0, 2, 0, 0)
+1-ps:  (3, -1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x0*x1 + d2*x0*x2 + d1*x0*x3
+The B^0 is: 
+e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+#######################################################
+Case 8
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Support monomial hypersurface:  (1, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d3*x1^2 + d1*x1*x2 + d2*x2^2 + d0*x1*x3 + d5*x2*x3 + d4*x3^2
+The B^0 is: 
+e2*x0*x1 + e1*x0*x2 + e0*x0*x3
+#######################################################
+Solving for wall 4/9
+Case 1
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (25, 9, -15, -19)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (25, 9, -15, -19)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, -1, -3, -5)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 1, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 1, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for wall 2/3
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 3, 1, -9)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 3, 1, -9)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 5, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 1, -1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d1*x1*x2 + d0*x0*x3
+The B^0 is: 
+e1*x2^2 + e0*x1*x3
+B^0_h =  g0*x0
+#######################################################
+Case 12
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 1, -1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x1^2 + d1*x0*x2
+The B^0 is: 
+e1*x1*x2 + e0*x0*x3
+B^0_h =  g0*x3
+#######################################################
+Case 13
+V^- =  d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 1, -1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d1*x2^2 + d0*x1*x3
+The B^0 is: 
+e1*x1*x2 + e0*x0*x3
+B^0_h =  g0*x0
+#######################################################
+Case 14
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 1, -1, -3)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 19
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 20
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for wall 4/5
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d1*x1^2 + d2*x0*x2 + d0*x0*x3
+The B^0 is: 
+e2*x2^2 + e1*x2*x3 + e0*x3^2
+B^0_h =  g0*x0
+#######################################################
+Case 7
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+The B^0 is: 
+e2*x1^2 + e1*x0*x2 + e0*x0*x3
+B^0_h =  g0*x0
+#######################################################
+Case 8
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 5, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 1, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 1, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 3, -1, -5)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d2*x2^2 + d1*x0*x3 + d0*x1*x3
+The B^0 is: 
+e2*x0^2 + e1*x0*x1 + e0*x1^2
+B^0_h =  g0*x3
+#######################################################
+Case 16
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for wall 1
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 0, -2)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 0, -2)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x1^2 + d2*x1*x2 + d3*x2^2 + d1*x0*x3
+The B^0 is: 
+e1*x1*x3 + e0*x2*x3
+B^0_h =  g0*x0
+#######################################################
+Case 11
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 0, 0, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x0*x1 + d1*x0*x2
+The B^0 is: 
+e3*x1^2 + e2*x1*x2 + e1*x2^2 + e0*x0*x3
+B^0_h =  g0*x3
+#######################################################
+Case 12
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x1*x3 + d1*x2*x3
+The B^0 is: 
+e3*x1^2 + e2*x1*x2 + e1*x2^2 + e0*x0*x3
+B^0_h =  g0*x0
+#######################################################
+Case 14
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 0, 0, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d0*x1^2 + d2*x1*x2 + d3*x2^2 + d1*x0*x3
+The B^0 is: 
+e1*x0*x1 + e0*x0*x2
+B^0_h =  g0*x3
+#######################################################
+Case 15
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for wall 4/3
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (5, 4, -3, -6)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (5, 4, -3, -6)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d3*x0^2 + d0*x0*x1 + d4*x1^2 + d2*x0*x2 + d1*x1*x2 + d5*x2^2
+The B^0 is: 
+e5*x0^2 + e4*x0*x1 + e3*x1^2 + e2*x0*x2 + e1*x1*x2 + e0*x2^2
+B^0_h =  g0*x3
+#######################################################
+Case 9
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+This is a strictly t-semistable family
+Potential closed orbit
+V^0 =  d3*x1^2 + d1*x1*x2 + d2*x2^2 + d0*x1*x3 + d5*x2*x3 + d4*x3^2
+The B^0 is: 
+e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+B^0_h =  g0*x0
+#######################################################
+Case 13
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for chamber 55/126
+Case 1
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (25, 9, -15, -19)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (25, 9, -15, -19)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, -1, -3, -5)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 1, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 1, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 1, 1, -3)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for chamber 49/75
+Case 1
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 5, 1, -13)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 5, 1, -13)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 5, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 1, -1, -3)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 1, -1, -3)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 19
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 20
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for chamber 51/65
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (9, 5, -1, -13)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 1, -3, -3)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 3, 1, -9)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (5, 3, 1, -9)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (5, 5, -3, -7)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 1, -1, -3)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 1, -1, -3)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for chamber 49/50
+Case 1
+V^- =  d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (0, 1, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (7, 3, -1, -9)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 1, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 17
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 18
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Solving for chamber 55/42
+Case 1
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (19, 15, -9, -25)
+Not strictly t-semistable
+#######################################################
+Case 2
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (19, 15, -9, -25)
+Not strictly t-semistable
+#######################################################
+Case 3
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 4
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 5
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (0, 0, 1, 0)
+1-ps:  (7, 3, -5, -5)
+Not strictly t-semistable
+#######################################################
+Case 6
+V^- =  d9*x0^2 + d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 0, 2)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 7
+V^- =  d0*x3^2
+B^- =  e9*x0^2 + e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (2, 0, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (15, 11, -1, -25)
+Not strictly t-semistable
+#######################################################
+Case 8
+V^- =  d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e2*x2^2 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 0, 2, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 9
+V^- =  d2*x2^2 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 1, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (1, 1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 10
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 11
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e6*x1^2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 12
+V^- =  d6*x1^2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 0, 0, 1)
+1-ps:  (1, 0, 0, -1)
+Not strictly t-semistable
+#######################################################
+Case 13
+V^- =  d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 0, 0, 1)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, 3, -1, -5)
+Not strictly t-semistable
+#######################################################
+Case 14
+V^- =  d8*x0*x1 + d7*x1^2 + d6*x0*x2 + d5*x1*x2 + d4*x2^2 + d3*x0*x3 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 15
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e5*x1^2 + e4*x1*x2 + e3*x2^2 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g3*x0 + g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (0, 2, 0, 0)
+Support monomial hyperplane:  (1, 0, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
+Case 16
+V^- =  d5*x1^2 + d4*x1*x2 + d3*x2^2 + d2*x1*x3 + d1*x2*x3 + d0*x3^2
+B^- =  e8*x0*x1 + e7*x1^2 + e6*x0*x2 + e5*x1*x2 + e4*x2^2 + e3*x0*x3 + e2*x1*x3 + e1*x2*x3 + e0*x3^2
+Hyperplane B^- =  g2*x1 + g1*x2 + g0*x3
+Support monomial hypersurface:  (1, 1, 0, 0)
+Support monomial hyperplane:  (0, 1, 0, 0)
+1-ps:  (3, -1, -1, -1)
+Not strictly t-semistable
+#######################################################
